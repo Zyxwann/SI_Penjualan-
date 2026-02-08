@@ -345,7 +345,7 @@ class ProductTransactionResource extends Resource
 
                     $pdf = Pdf::loadView(
                         'pdf.monthly-report',
-                        compact('transactions', 'total sudah dibayar', 'total belum dibayar', 'data')
+                        compact('transactions', 'totalPaid', 'totalUnpaid', 'data')
                     );
 
 

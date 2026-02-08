@@ -40,8 +40,8 @@
 </table>
 
 <p>
-    <strong>Total Paid:</strong> Rp {{ number_format($totalPaid) }} <br>
-    <strong>Total Unpaid:</strong> Rp {{ number_format($totalUnpaid) }}
+    <strong>Total Sudah dibayar:</strong> Rp {{ number_format($totalPaid) }} <br>
+    <strong>Total Belum dibayar:</strong> Rp {{ number_format($totalUnpaid) }}
 </p>
 
 </body>
