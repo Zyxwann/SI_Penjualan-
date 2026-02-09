@@ -23,13 +23,9 @@ class PromoCodeResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-gift';
 
-    public static function canViewAny(): bool
-{
-    return in_array(Auth::user()->role, [
-        'super-admin',
-        'kasir',
-    ]);
-}
+    public static function canViewany(): bool{
+        return Auth::user()->role === 'super-admin';
+    }
     public static function canCreate(): bool
     {
         return Auth::user()->role === 'super-admin';

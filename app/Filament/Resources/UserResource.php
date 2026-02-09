@@ -50,7 +50,7 @@ class UserResource extends Resource
                     ->options([
                         'super-admin' => 'Super Admin',
                         'kasir' => 'Kasir',
-                        'user' => 'User',
+
 
                     ])
                     ->required(),

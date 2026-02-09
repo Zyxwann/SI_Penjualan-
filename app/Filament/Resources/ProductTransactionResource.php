@@ -308,6 +308,7 @@ class ProductTransactionResource extends Resource
         ])->headerActions([
             Tables\Actions\Action::make('monthly_report')
                 ->label('Generate Laporan Bulanan')
+                ->visible(fn()=> Auth::User()->role === 'super-admin')
                 ->icon('heroicon-o-document-text')
                 ->form([
                     Forms\Components\DatePicker::make('start_date')
